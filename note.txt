@@ -1,0 +1,107 @@
+==============================
+PERTEMUAN 1 | PENDAHULUAN
+==============================
+APA ITU OOP ?
+Gaya Penulisan Pemrograman/Paradigma Pemrograman
+
+=== Perbedaan Procedural Programming dan OOP ===
+------------------------------------------------
+Procedural Programming :
+- intruksi dilakukan langkah demi langkah
+- memecahkan program menjadi bagian2 kecil
+- disebut procedur, subrutine atau function
+- linear / top to bottom
+
+Kelebihan Procedural Programming
+- To the Point
+- Simplicity & kemudahan implementasi (untuk comiler dan interpreter)
+- mudah ditelusuri
+- membutuhkan lebih sedikit memory dibanding OOP
+
+-------------------------------------------------
+Object Oriented Programming
+- Menyusun semua kode program dan struktur data sebagai object
+- object adalah unit dasar dari program
+- object menyimpan data dan perilaku
+- object bisa saling berinteraksi
+
+Kelebihan Object Oriented Programming
+- Representasi dunia nyata
+- enkapsulasi (aman) & abstraksi Data (menyembunyikan kerumitan data)
+- reusability (menggunaka ulang)
+- skalabilitas dan ekstensibilitas
+- kemudaahan pengelolaan
+- kolaborasi
+- digunakan oleh framework
+
+
+
+==============================
+PERTEMUAN 2 | OBJECT DAN CLASS
+==============================
+
+~ CLASS ~
+- blueprint/template untuk membuat instance dari OBJECT
+- Class mendifinisikan OBJECT
+- menyimpan data dan perilaku yang desebut dengan properti dan method
+
+penulisan :
+class NamaClass {
+
+}
+
+~ Object ~
+- Instance yang didefinisikan oleh Class
+- banyak object dapat dibuat menggunkanan satu Class
+- object dibuat dengan menggunakan keyword new
+
+penulisan :
+$namaVariable = new namaClass
+
+
+
+=================================
+PERTEMUAN 3 | PROPERTY DAN METHOD
+=================================
+PROPERTY :
+- merepresantasikan data/keadaan dari sebuah object
+- variable yang ada didalam object ( member variable )
+- sama seperti variable didalam PHP, ditambah dengan visibility didepannya (Public, Private, Protected)
+
+cara penulisan :
+class Product {
+       //ini adalah properti
+       public $judul, $penulis ....;
+}
+
+3 cara pengaplikasian ke object :
+1. langsung didalam class nya :
+       public $judul = "nama_judulnya"
+
+2. membuat langsung didalam object baru
+       $Product1 = new Product();
+       $Product1->judul = "Naruto "
+
+-----------------------------------------------
+METHOD :
+- merepresantasikan prilaku dari sebuah object
+- function yang ada didalam object
+- sama seperti functiond didalam PHP, ditambah dengan visibility didepannya
+
+Cara Penulisan :
+1. didalam Class, masukan :
+       public function namaFungsi() {
+              return blababa
+       }
+2. untuk mengeluarkannya :
+       echo $Product1->namaFungsi();
+
+Jika kita ingin memasukan properti didalam function, maka gunakan $this,
+mengapa ? karena lingkup variable, jika tidak menggunakan $this, fungsi membuat variable baru
+
+$this fungsinya : untuk mengambil isi dari properti didalam class yang bersangkutan
+
+cara penulisan :
+       public function namaFungsi() {
+              return $this->judul, $this->penerbit
+       }
