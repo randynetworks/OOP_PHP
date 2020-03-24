@@ -142,3 +142,27 @@ data nanti akan dimasukan kedalam sebuah parameter, dan mengopernya ke properti 
        $Product1 = new Product("Judulnya", "Penulis" ... dst);
 
 
+
+=================================
+PERTEMUAN 5 | OBJECT TYPE
+=================================
+contoh studi kasus, membuat info
+
+1. membuat class baru, tugasnya mencetak info Product saja
+2. buat fungsi dengan parameter objectkita
+
+public function cetak( $product ) {
+       $str = "{$product->judul} | {$product->getLabel} (RP. {$product->harga})"
+}
+
+3. cara menampilkan info
+       $infoProduct1 = new cetakInfo
+       echo $infoProduct1->cetak($product1)
+
+4. namun jika seperti itu saja, pembuatan parameter cetak di fungsi cetak, 
+   dapat dimasuki apa pun input kita/user
+   cara mengatasinya, buat deklarasi sebelum variable dengan jenis class tertentu
+
+   public function cetak( Product $product ) {
+       $str = "{$product->judul} | {$product->getLabel} (RP. {$product->harga})"
+}    
