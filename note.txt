@@ -105,3 +105,40 @@ cara penulisan :
        public function namaFungsi() {
               return $this->judul, $this->penerbit
        }
+
+
+
+=================================
+PERTEMUAN 4 | CONSTRUCTOR
+=================================
+apa itu Constructor :
+- sebuah method yang special yang ada didalam sebuah kelas,
+- method yang otomatis berjalan ketika kelas di instansiasi/buat object
+
+penulisannya :
+1. penulisan berada didalam class
+       public function __construct() {
+
+       }
+2. pada kasus ini, agar tidak menulis manual data yang di input, 
+data nanti akan dimasukan kedalam sebuah parameter, dan mengopernya ke properti yang ada
+
+       public function __construct($judul, $penulis, $penerbit, $harga) {
+              
+       }
+       *) perlu diingat, variable didalam parameter berbeda dengan properti
+
+3. agar data yang dimasukan kedalam parameter langsung disimpan di propertis, gunakan $this
+       
+       public function __construct($judul, $penulis, $penerbit, $harga) {
+          $this->judul = $judul;
+          dst ..    
+       }
+
+4. Kita juga bisa buat default text setiap nilai variablenya didalam parameter :
+       public function __construct($judul= "Judulnya", $penulis, $penerbit, $harga) {}
+
+5. yang kita lakukan ketika instansiasi, masukan semua data didalam parameter
+       $Product1 = new Product("Judulnya", "Penulis" ... dst);
+
+
