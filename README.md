@@ -199,3 +199,15 @@ contoh studi kasus, membuat info
        }
 
 
+
+ #PERTEMUAN 8 | OVERRIDING
+ 
+ Yaitu : 
+ Method yang kita buat, menimpa dengan method parent nya
+ kenapa harus melakukan overriding, karena setiap child memiliki fungsi yang
+ sama namun memiliki perlakuan tambahan.
+
+ cara penulisannya
+       parent::namaFungsi_didalamParent
+
+
