@@ -46,9 +46,10 @@ Kelebihan Object Oriented Programming
 - menyimpan data dan perilaku yang desebut dengan properti dan method
 
 penulisan :
-class NamaClass {
+       
+       class NamaClass {
 
-}
+       }
 
 ~ Object ~
 - Instance yang didefinisikan oleh Class
@@ -56,7 +57,8 @@ class NamaClass {
 - object dibuat dengan menggunakan keyword new
 
 penulisan :
-$namaVariable = new namaClass
+       
+       $namaVariable = new namaClass
 
 
 
@@ -69,18 +71,21 @@ PROPERTY :
 - sama seperti variable didalam PHP, ditambah dengan visibility didepannya (Public, Private, Protected)
 
 cara penulisan :
-class Product {
-       //ini adalah properti
-       public $judul, $penulis ....;
-}
+       
+       class Product {
+              //ini adalah properti
+              public $judul, $penulis ....;
+       }
 
 3 cara pengaplikasian ke object :
 1. langsung didalam class nya :
-       public $judul = "nama_judulnya"
+       
+       public $judul = "nama_judulnya";
 
 2. membuat langsung didalam object baru
+       
        $Product1 = new Product();
-       $Product1->judul = "Naruto "
+       $Product1->judul = "Naruto ";
 
 -----------------------------------------------
 METHOD :
@@ -90,10 +95,12 @@ METHOD :
 
 Cara Penulisan :
 1. didalam Class, masukan :
+       
        public function namaFungsi() {
               return blababa
        }
 2. untuk mengeluarkannya :
+       
        echo $Product1->namaFungsi();
 
 Jika kita ingin memasukan properti didalam function, maka gunakan $this,
@@ -102,6 +109,7 @@ mengapa ? karena lingkup variable, jika tidak menggunakan $this, fungsi membuat 
 $this fungsinya : untuk mengambil isi dari properti didalam class yang bersangkutan
 
 cara penulisan :
+       
        public function namaFungsi() {
               return $this->judul, $this->penerbit
        }
@@ -117,6 +125,7 @@ apa itu Constructor :
 
 penulisannya :
 1. penulisan berada didalam class
+       
        public function __construct() {
 
        }
@@ -136,9 +145,11 @@ data nanti akan dimasukan kedalam sebuah parameter, dan mengopernya ke properti 
        }
 
 4. Kita juga bisa buat default text setiap nilai variablenya didalam parameter :
+       
        public function __construct($judul= "Judulnya", $penulis, $penerbit, $harga) {}
 
 5. yang kita lakukan ketika instansiasi, masukan semua data didalam parameter
+       
        $Product1 = new Product("Judulnya", "Penulis" ... dst);
 
 
@@ -156,6 +167,7 @@ contoh studi kasus, membuat info
        }
 
 3. cara menampilkan info
+       
        $infoProduct1 = new cetakInfo
        echo $infoProduct1->cetak($product1)
 
@@ -208,6 +220,7 @@ contoh studi kasus, membuat info
  sama namun memiliki perlakuan tambahan.
 
  cara penulisannya
+       
        parent::namaFungsi_didalamParent
 
 
