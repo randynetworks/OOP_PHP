@@ -4,7 +4,7 @@
 APA ITU OOP ?
 Gaya Penulisan Pemrograman/Paradigma Pemrograman
 
-=== Perbedaan Procedural Programming dan OOP ===
+Perbedaan Procedural Programming dan OOP
 ------------------------------------------------
 Procedural Programming :
 - intruksi dilakukan langkah demi langkah
@@ -184,4 +184,18 @@ contoh studi kasus, membuat info
 
  yang kita ingin kan adalah, kita menambahkan properti halaman pada komik,
  dan menambahkan durasi pada anime
+
+
+
+
+ #PERTEMUAN 7 | INHERITANCE BAG. 2
  
+ Penerapan Inheritance pada studi kasus kita
+ 
+ cara Penulisan inheritance :
+
+       class NamaClass extends namaParentClass {
+              
+       }
+
+
