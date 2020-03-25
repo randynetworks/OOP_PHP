@@ -212,7 +212,7 @@ contoh studi kasus, membuat info
 
 
 
-#PERTEMUAN 9 | VISIBILITY / Access Modifier
+# PERTEMUAN 9 | VISIBILITY / Access Modifier
 
 ADA 3 JENIS VISIBILITY
 1. Public    : dapat digunakan dimana saja, bahkan diluar kelas
