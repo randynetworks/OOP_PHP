@@ -212,6 +212,7 @@ contoh studi kasus, membuat info
 
 
 
+
 # PERTEMUAN 9 | VISIBILITY / Access Modifier
 
 ADA 3 JENIS VISIBILITY
@@ -224,3 +225,33 @@ KENAPA HARUS MENGGUNAKAN VISIBILITY
 2. menentukan kebutuhan yang jelas untuk object
 3. memberikan kendali pada kode untuk menhindari 'bug'
 
+
+
+# PERTEMUAN 10 | SETTER DAN GETTER (Accessor Method)
+
+## Setter
+
+Method yang mengubah isi Properti yang Protected atau Private
+penulisannya sendiri, sama seperti function biasa
+
+       public function setNamaFunction( $yangDiImput ) {
+              
+       }
+
+jangan lupa, karena akan di set, jdi kita harus mengoper parameter di functionnya
+
+## Getter
+
+Method yang membaca/menampilkan isi Properti yang Protected atau Private
+penulisannya sendiri, sama seperti function biasa
+
+       public function getNamaFunction() {
+              
+       }
+
+fungsi keduanya simple, karena properti yang sebelumnya dibuat visibility nya
+protected atau private, didalam getter dan setter hanya membuat getter bisa diakses,
+dan setter bisa di gunakan.
+
+**Di studi kasus ini sendiri kita akan membuat properti tidak dapat di akses secara langsung,
+melainkan diakses menggunakan getter dan setter agar lebih aman
