@@ -1,6 +1,6 @@
-==============================
-PERTEMUAN 1 | PENDAHULUAN
-==============================
+
+#PERTEMUAN 1 | PENDAHULUAN
+
 APA ITU OOP ?
 Gaya Penulisan Pemrograman/Paradigma Pemrograman
 
@@ -36,9 +36,9 @@ Kelebihan Object Oriented Programming
 
 
 
-==============================
-PERTEMUAN 2 | OBJECT DAN CLASS
-==============================
+
+#PERTEMUAN 2 | OBJECT DAN CLASS
+
 
 ~ CLASS ~
 - blueprint/template untuk membuat instance dari OBJECT
@@ -60,9 +60,9 @@ $namaVariable = new namaClass
 
 
 
-=================================
-PERTEMUAN 3 | PROPERTY DAN METHOD
-=================================
+
+#PERTEMUAN 3 | PROPERTY DAN METHOD
+
 PROPERTY :
 - merepresantasikan data/keadaan dari sebuah object
 - variable yang ada didalam object ( member variable )
@@ -108,9 +108,9 @@ cara penulisan :
 
 
 
-=================================
-PERTEMUAN 4 | CONSTRUCTOR
-=================================
+
+#PERTEMUAN 4 | CONSTRUCTOR
+
 apa itu Constructor :
 - sebuah method yang special yang ada didalam sebuah kelas,
 - method yang otomatis berjalan ketika kelas di instansiasi/buat object
@@ -143,17 +143,17 @@ data nanti akan dimasukan kedalam sebuah parameter, dan mengopernya ke properti 
 
 
 
-=================================
-PERTEMUAN 5 | OBJECT TYPE
-=================================
+
+#PERTEMUAN 5 | OBJECT TYPE
+
 contoh studi kasus, membuat info
 
 1. membuat class baru, tugasnya mencetak info Product saja
 2. buat fungsi dengan parameter objectkita
 
-public function cetak( $product ) {
-       $str = "{$product->judul} | {$product->getLabel} (RP. {$product->harga})"
-}
+       public function cetak( $product ) {
+              $str = "{$product->judul} | {$product->getLabel} (RP. {$product->harga})"
+       }
 
 3. cara menampilkan info
        $infoProduct1 = new cetakInfo
@@ -163,6 +163,25 @@ public function cetak( $product ) {
    dapat dimasuki apa pun input kita/user
    cara mengatasinya, buat deklarasi sebelum variable dengan jenis class tertentu
 
-   public function cetak( Product $product ) {
-       $str = "{$product->judul} | {$product->getLabel} (RP. {$product->harga})"
-}    
+       public function cetak( Product $product ) {
+              $str = "{$product->judul} | {$product->getLabel()} (RP. {$product->harga})";
+       }    
+
+
+
+#PERTEMUAN 6 | INHERITANCE 
+
+ - Menciptakan hierarki antar kelas (Parent & Child)
+ - Child Class, Mewarisi semua properti dan method dari parent-nya (yang visible)
+ - Child Class, memperluas (ekstends) fungsionalitas dari parent-nya
+
+ menyelesaikan problem dan mencoba fungsional baru di studi kasus
+ Problem : 
+ 
+ pada studi kasus kita, akan ada masalah jika jenis dari setiap object baru berbeda,
+ dalam kasus ini, terdapat 2 jenis object baru (Komik dan anime) yang masing masing
+ memiliki salahsatu properti yang berbeda.
+
+ yang kita ingin kan adalah, kita menambahkan properti halaman pada komik,
+ dan menambahkan durasi pada anime
+ 
