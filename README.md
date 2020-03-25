@@ -18,7 +18,7 @@ Kelebihan Procedural Programming
 - mudah ditelusuri
 - membutuhkan lebih sedikit memory dibanding OOP
 
--------------------------------------------------
+------------------------------------------------
 Object Oriented Programming
 - Menyusun semua kode program dan struktur data sebagai object
 - object adalah unit dasar dari program
@@ -210,4 +210,17 @@ contoh studi kasus, membuat info
  cara penulisannya
        parent::namaFungsi_didalamParent
 
+
+
+#PERTEMUAN 9 | VISIBILITY / Access Modifier
+
+ADA 3 JENIS VISIBILITY
+1. Public    : dapat digunakan dimana saja, bahkan diluar kelas
+2. Protected : hanya dapat digunakan didalam sebuah kelas beserta turunannya
+3. Private   : Hanya dapat digunakan didalam sebuah kelas tertentu saja
+
+KENAPA HARUS MENGGUNAKAN VISIBILITY
+1. hanya memperlihakan aspek class yang dibutuhkan oleh 'client'
+2. menentukan kebutuhan yang jelas untuk object
+3. memberikan kendali pada kode untuk menhindari 'bug'
 
