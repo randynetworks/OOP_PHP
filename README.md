@@ -1,11 +1,11 @@
 
-#PERTEMUAN 1 | PENDAHULUAN
+# PERTEMUAN 1 | PENDAHULUAN
 
 APA ITU OOP ?
 Gaya Penulisan Pemrograman/Paradigma Pemrograman
 
 Perbedaan Procedural Programming dan OOP
-------------------------------------------------
+
 Procedural Programming :
 - intruksi dilakukan langkah demi langkah
 - memecahkan program menjadi bagian2 kecil
@@ -37,7 +37,7 @@ Kelebihan Object Oriented Programming
 
 
 
-#PERTEMUAN 2 | OBJECT DAN CLASS
+# PERTEMUAN 2 | OBJECT DAN CLASS
 
 
 ~ CLASS ~
@@ -61,7 +61,7 @@ $namaVariable = new namaClass
 
 
 
-#PERTEMUAN 3 | PROPERTY DAN METHOD
+# PERTEMUAN 3 | PROPERTY DAN METHOD
 
 PROPERTY :
 - merepresantasikan data/keadaan dari sebuah object
@@ -109,7 +109,7 @@ cara penulisan :
 
 
 
-#PERTEMUAN 4 | CONSTRUCTOR
+# PERTEMUAN 4 | CONSTRUCTOR
 
 apa itu Constructor :
 - sebuah method yang special yang ada didalam sebuah kelas,
@@ -144,7 +144,7 @@ data nanti akan dimasukan kedalam sebuah parameter, dan mengopernya ke properti 
 
 
 
-#PERTEMUAN 5 | OBJECT TYPE
+# PERTEMUAN 5 | OBJECT TYPE
 
 contoh studi kasus, membuat info
 
@@ -169,7 +169,7 @@ contoh studi kasus, membuat info
 
 
 
-#PERTEMUAN 6 | INHERITANCE 
+# PERTEMUAN 6 | INHERITANCE 
 
  - Menciptakan hierarki antar kelas (Parent & Child)
  - Child Class, Mewarisi semua properti dan method dari parent-nya (yang visible)
@@ -200,7 +200,7 @@ contoh studi kasus, membuat info
 
 
 
- #PERTEMUAN 8 | OVERRIDING
+ # PERTEMUAN 8 | OVERRIDING
  
  Yaitu : 
  Method yang kita buat, menimpa dengan method parent nya
