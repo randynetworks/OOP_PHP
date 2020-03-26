@@ -293,3 +293,61 @@ di instansiasi. cara pemanggilan :
 - membuat kode menjadi lebih procedural
 - biasanya digunakan untuk membuat fungsi bantuan / helper
 - atau digunakan di class class frameworks
+
+
+
+# Constant
+
+Constant adalah sebuah identifier untuk menyimpan nilai,
+namun nilai yang telah di set tidak bisa berubah.
+
+penulisan constanta harus menggunakan huruf besar,
+konstan tanpa menggunakan $
+
+2 Cara Pembuatan COnstant
+
+- Keyword defide()
+
+       define(NAME, value);
+
+untuk mengaksesnya :
+
+       echo NAME;
+
+- keyword const
+
+       const NAME = value;
+
+untuk mengaksesnya :
+
+       echo NAME;
+
+perbedaan dari keduanya adalah, ketika kita akan menggunakan konsep
+object oriented. 
+
+Jika kita ingin membuat constant dengan define, maka penulisannya harus diluar class
+karena bersifat global.
+
+jika kita ingin membuat constant dengan const, maka penulisannya bisa didalam Class
+
+
+Penulisan const didalam class :
+
+       Class NamaClass {
+              const NAME = value;
+       }
+
+       echo NamaClass::NAME;
+
+Ada yang namanya Magic Constant,  yaitu constant yang disediakan langsung oleh PHP,
+biasanya nilai dari masing masing berisi informasi program PHP kita
+
+- __LINE__
+- __FILE__
+- __DIR__
+- __FUNCTION__
+- __CLASS__
+- __TRAIT__
+- __METHOD__
+- __NAMESPACE__
+ 
