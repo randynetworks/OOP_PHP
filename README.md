@@ -255,3 +255,41 @@ dan setter bisa di gunakan.
 
 **Di studi kasus ini sendiri kita akan membuat properti tidak dapat di akses secara langsung,
 melainkan diakses menggunakan getter dan setter agar lebih aman
+
+
+
+# PERTEMUAN 11 | STATIC KEYWORD
+kita bisa mengakses property dan method dalam konteks class
+
+cara penulisan static keyword didalam class:
+
+- untuk property
+
+       public static namaProperty;
+
+- untuk method
+
+       public static function namaMethod() {
+
+       }
+
+cara memanggil/mengeluarkan properti yang ada keyword static :
+
+       echo NamaClass::$namaProperty;
+
+cara memanggil/mengeluarkan method yang ada keyword static :
+
+       echo NamaClass::namaMethod();
+
+untuk memanggil property didalam suatu class menggukanan method,
+kita tidak lagi menggunakan $this karena, ia hanya belaku ketika object baru
+di instansiasi. cara pemanggilan :
+
+       self::$namaProperty;
+
+### Untuk Apa Static Keyword ?
+- Member yang terikat dengan class, bukan dengan object
+- nilai static akan selalu tetap meskipun object di -nstansiasi berulang kali
+- membuat kode menjadi lebih procedural
+- biasanya digunakan untuk membuat fungsi bantuan / helper
+- atau digunakan di class class frameworks
