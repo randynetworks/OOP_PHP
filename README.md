@@ -354,7 +354,7 @@ biasanya nilai dari masing masing berisi informasi program PHP kita
 
  
 
-# PERTEMUAN 13 - 14 ABSTRACT CLASS
+# PERTEMUAN 13 - 14 | ABSTRACT CLASS
 
 ### Teori
 
@@ -389,3 +389,45 @@ Class abstrak didefinisikan dengan menambahkan abstract sebelum deklarasi class
 function abstrak didefinisikan dengan menambahkan abstract sebelum deklarasi function
 
        abstract public function makan();
+
+
+
+
+
+# PERTEMUAN 15 | INTERFACE
+
+Apa itu interface ?
+- Kelas abstrak yang sama sekali tidak memiliki implementasi
+- murni merupakan tempate untuk kelas turunannya
+- tidak boleh memiliki properti, hanya deklarasi method saja
+- semua method harus dideklarasikan dengan visibility public
+- boleh mendeklarasikan __construct()
+- satu kelas boleh mengimplementasikan banyak interface
+- dengan meggunakan type-hinting dapat melakukan 'dependency injectiom'
+- pada akhirnya akan mencapai polymorphism
+
+- setiap child class wajib mewarisi method di kelas interface.
+
+cara penulisan interface :
+
+       interface NamaInterface {
+
+       }
+
+cara penerapan ke child class :
+
+       class NamaClass implements NamaInterface {
+
+       }
+
+cara penerapan ke child class lebih dari 1 interface :
+
+       class NamaClass implements NamaInterface1, NamaInterface2 {
+
+       }
+
+cara penerapan ke child class dari parent class + interface :
+
+       class NamaClass extends ParentClass implements NamaInterface {
+
+       }
