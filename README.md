@@ -431,3 +431,20 @@ cara penerapan ke child class dari parent class + interface :
        class NamaClass extends ParentClass implements NamaInterface {
 
        }
+
+
+
+# PERTEMUAN 16 | AUTOLOLOADING
+
+Apa itu autoloading ?
+
+- memanggil class (file) tanpa harus menggunakan require
+
+cara menggunakannya :
+1. kita pecah semua class menjadi 1 class 1 file
+2. penulisan nama file harus sesuai dengan nama class
+3. cara menghubungkan semua class mengunakan fungsi :
+
+       spl_autoload_register();
+
+4. require hanya berada di index.php saja
