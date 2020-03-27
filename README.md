@@ -69,6 +69,7 @@ PROPERTY :
 - sama seperti variable didalam PHP, ditambah dengan visibility didepannya (Public, Private, Protected)
 
 cara penulisan :
+
 class Product {
        //ini adalah properti
        public $judul, $penulis ....;
@@ -296,7 +297,7 @@ di instansiasi. cara pemanggilan :
 
 
 
-# Constant
+# PERTEMUAN 12 | CONSTANT
 
 Constant adalah sebuah identifier untuk menyimpan nilai,
 namun nilai yang telah di set tidak bisa berubah.
@@ -350,4 +351,41 @@ biasanya nilai dari masing masing berisi informasi program PHP kita
 - __TRAIT__
 - __METHOD__
 - __NAMESPACE__
+
  
+
+# PERTEMUAN 13 - 14 ABSTRACT CLASS
+
+### Teori
+
+Apa itu abstrak class :
+- Sebuah kelas yang tidak dapat di instansiasi
+- kelas 'Abstrak'
+- Mendefinisikan interface untuk kelas lain yang menjadi turunannya
+- berperan sebagai kerangka dasar untuk kelas turunannya
+- memiliki minimal 1 method abstrak
+- digunakan dalam inheritance untuk memaksakan impolementasi method abstrak
+  yang sama untuk semua kelas turunannya
+- Semuia kelas turunan, harus mengimplementasikan method abstrak yang ada dikelas abstraknya
+- kelas abstrak boleh memiliki properti/method reguler dan boleh memiliki property/static method
+
+
+Kenapa Menggunakan kelas abstrak ?
+- merepresentasikan ide atau konsep dasar
+- comosition over inheritance
+- salah satu cara menerapkan polimorphism
+- sentralisasi logic
+- mempermudah pengerjaan tim
+
+### Pembuatan Kelas Abstrak
+Class abstrak didefinisikan dengan menambahkan abstract sebelum deklarasi class
+
+       abstract class Buah {
+ 
+       }
+
+
+### Pembuatan function Abstrak
+function abstrak didefinisikan dengan menambahkan abstract sebelum deklarasi function
+
+       abstract public function makan();
