@@ -448,3 +448,65 @@ cara menggunakannya :
        spl_autoload_register();
 
 4. require hanya berada di index.php saja
+ 
+
+
+# PERTEMUAN 17 | NAMESPACE / ENCAPTULATION
+
+Sebuah cara untuk mengelompokan program ke dalam sebuah
+package tersediri/ identitas tersendiri
+
+PHP tidak mengijinkan kita untuk memiliki
+2 class dengan nama yang sama
+
+### Studi kasus
+pada kasus ini, kita akan membuat user.php didalam folder produk
+dan di folder Service
+
+penulisan namespace di tulis diawal paling atas file php.
+
+       namespace vendor\namespace\subnamespace;
+
+cara pemanggilan class dengan namepspace :
+
+       echo namespace\namaClass;
+
+       c/
+       echo App\Produk\User;
+
+### pengaturan didalam file init.
+
+akan terjadi error bila kita memasukan 2 folder kedalam fungsi 
+
+       spl_autoload_register();
+
+cara melakukannya adalah dengan membuat fungsi baru saja.
+
+permasalahan selanjutnya adalah, ketika dijalankan akan terjadi error,
+karena file php tidak mengetahui direktori yang telah diubah menjadi namespace
+
+       Warning: require_once(Produk/App\Produk\User.php): failed to open stream.
+
+dapat disimpulkan dengan jelas bahwa yang diambil php adalah direktori namepspace
+
+cara mengakalinya adalah dengan memecah semua direktori dengan explode() (menjadi array)
+dan mengambil index paling akhir (karena nama file terdapat disana).
+
+       $class = explode('\\', $class);
+       $class = end($class);
+
+pengambilan dengan explode mengambil yang membatasi (\)
+
+### penggunaan use untuk alias
+
+use atau alias digunakan agar kita tidak selalu membawa nama namespacenya,
+karena suatu saat akan ada namespace yang panjang dan kita harus mengulang ngulang nya
+
+cara penulisannya :
+
+       use namespace as alias
+
+dan cara penggunaannya kita tidak lagi menggunakan namespace tapi alianya:
+
+       new alias;
+
